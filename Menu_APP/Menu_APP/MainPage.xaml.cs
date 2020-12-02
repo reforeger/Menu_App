@@ -16,7 +16,7 @@ namespace Menu_APP
         public MainPage()
         {
             InitializeComponent();
-            IMG.Source = ImageSource.FromFile("");
+            //IMG.Source = ImageSource.FromFile("");
             var homePage = typeof(Views.AboutPage);
             Detail = new NavigationPage((Page)Activator.CreateInstance(homePage));
             IsPresented = false;
@@ -32,7 +32,7 @@ namespace Menu_APP
 
                 Text = "Minust",
                 Detail = "Lühike info",
-                ImagePath = "about.png",
+                //ImagePath = "about.png",
                 TargetPage = typeof(Views.AboutPage)
             });
 
@@ -41,7 +41,7 @@ namespace Menu_APP
             {
                 Text = "Minu kogemus",
                 Detail = "Lühike info",
-                ImagePath = "list.png",
+                //ImagePath = "list.png",
                 TargetPage = typeof(Views.onePage)
             });
 
@@ -50,7 +50,7 @@ namespace Menu_APP
             {
                 Text = "Minust",
                 Detail = "Lühike info",
-                ImagePath = "slills.png",
+                //ImagePath = "slills.png",
                 TargetPage = typeof(Views.twoPage)
             });
 
@@ -59,7 +59,7 @@ namespace Menu_APP
             {
                 Text = "Minust",
                 Detail = "Lühike info",
-                ImagePath = "awards.png",
+                //ImagePath = "awards.png",
                 TargetPage = typeof(Views.threePage)
             });
             return list;

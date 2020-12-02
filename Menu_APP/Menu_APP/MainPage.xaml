@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu_APP.MainPage">
     <MasterDetailPage.Master>
-        <ContentPage Title="Master" BackgroundColor="Aqua" Padding="10">
+        <ContentPage Title="Master" BackgroundColor="CadetBlue" Padding="10">
             <ContentPage.Content>
                 <StackLayout Margin="10" Orientation="Vertical">
                     <Image x:Name="IMG"></Image>

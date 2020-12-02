@@ -14,7 +14,7 @@ namespace Menu_APP
     {
         public twoPage()
         {
-            InitializeComponent();
+            
         }
     }
 }
