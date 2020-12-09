@@ -84,7 +84,7 @@ namespace Menu_APP
             list.Add(new MasterMenuitems()
             {
                 Text = "Карты",
-                Detail = "разные способы",
+                Detail = "выбор банковских карт",
                 ImagePath = "card.png",
                 TargetPage = typeof(Views.fivePage)
             });
