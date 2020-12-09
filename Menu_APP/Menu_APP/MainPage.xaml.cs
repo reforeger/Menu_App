@@ -16,11 +16,16 @@ namespace Menu_APP
         public MainPage()
         {
             InitializeComponent();
-            //IMG.Source = ImageSource.FromFile("");
+
+            
+            IMG.Source = ImageSource.FromFile("swed.png");
             var homePage = typeof(Views.AboutPage);
             Detail = new NavigationPage((Page)Activator.CreateInstance(homePage));
             IsPresented = false;
             aboutList.ItemsSource = GetMenuList();
+
+
+
         }
         
         public List<MasterMenuitems> GetMenuList()
@@ -30,40 +35,86 @@ namespace Menu_APP
             list.Add(new MasterMenuitems()
             {
 
-                Text = "Minust",
-                Detail = "Lühike info",
-                //ImagePath = "about.png",
+                Text = "Главное меню",
+                Detail = "вход в меню",
+                
+                ImagePath = "swed.png",
                 TargetPage = typeof(Views.AboutPage)
+
+
+
             });
 
 
             list.Add(new MasterMenuitems()
             {
-                Text = "Minu kogemus",
-                Detail = "Lühike info",
-                //ImagePath = "list.png",
+                
+                Text = "О Банковской системе",
+                Detail = "дополнительная безопастность",
+                ImagePath = "lok.png",
                 TargetPage = typeof(Views.onePage)
             });
 
 
             list.Add(new MasterMenuitems()
             {
-                Text = "Minust",
-                Detail = "Lühike info",
-                //ImagePath = "slills.png",
+                Text = "Дополнительная информация",
+                Detail = "информация о приложении",
+                ImagePath = "qu.png",
                 TargetPage = typeof(Views.twoPage)
             });
 
 
             list.Add(new MasterMenuitems()
             {
-                Text = "Minust",
-                Detail = "Lühike info",
-                //ImagePath = "awards.png",
+                Text = "Обзор",
+                
+                ImagePath = "hos.png",
                 TargetPage = typeof(Views.threePage)
+            });
+
+            list.Add(new MasterMenuitems()
+            {
+                Text = "Платежи",
+               
+                ImagePath = "mon.png",
+                TargetPage = typeof(Views.fourPage)
+            });
+
+            list.Add(new MasterMenuitems()
+            {
+                Text = "Карты",
+                Detail = "разные способы",
+                ImagePath = "card.png",
+                TargetPage = typeof(Views.fivePage)
+            });
+
+            list.Add(new MasterMenuitems()
+            {
+                Text = "Услуги",
+                ImagePath = "list.png",
+                TargetPage = typeof(Views.sixPage)
+            });
+
+            list.Add(new MasterMenuitems()
+            {
+                Text = "Контакты",
+                Detail = "Частный клиент",
+                ImagePath = "kont.png",
+                TargetPage = typeof(Views.sevenPage)
+            });
+
+            list.Add(new MasterMenuitems()
+            {
+                Text = "Контакты",
+                Detail = "Бизнез-клиент",
+                ImagePath = "kont1.png",
+                TargetPage = typeof(Views.eightPage)
             });
             return list;
         }
+
+
 
 
 

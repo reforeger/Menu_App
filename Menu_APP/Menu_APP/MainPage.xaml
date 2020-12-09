@@ -2,8 +2,9 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu_APP.MainPage">
+    
     <MasterDetailPage.Master>
-        <ContentPage Title="Master" BackgroundColor="CadetBlue" Padding="10">
+        <ContentPage Title="Master" BackgroundColor="#e6a977" Padding="10" Opacity="0.95">
             <ContentPage.Content>
                 <StackLayout Margin="10" Orientation="Vertical">
                     <Image x:Name="IMG"></Image>
@@ -12,12 +13,11 @@
                             <DataTemplate>
                                 <ImageCell Text="{Binding Text}" Detail="{Binding Detail}" 
                                            ImageSource="{Binding ImagePath}">
-                                    
+
                                 </ImageCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <Label Text="Master Page Elemendid"></Label>
                 </StackLayout>
             </ContentPage.Content>
         </ContentPage>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Menu_APP.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class onePage : ContentPage
+    public partial class sevenPage : ContentPage
     {
-        public onePage()
+        public sevenPage()
         {
             InitializeComponent();
         }
