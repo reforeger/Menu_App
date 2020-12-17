@@ -4,10 +4,7 @@
              x:Class="Menu_APP.Views.AboutPage"
              BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <Button Text="but" BackgroundColor="Orange" FontSize="Micro" VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand">
-
-        </Button>
+        <Entry x:Name="tel_nr_email" Placeholder="Ender your telefon number" PlaceholderColor="Black" TextColor="Black" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"></Entry>
 
     </ContentPage.Content>
 </ContentPage>

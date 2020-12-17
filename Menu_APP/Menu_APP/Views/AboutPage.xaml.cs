@@ -1,4 +1,5 @@
 ﻿using System;
+using Plugin.Messaging;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,14 @@ namespace Menu_APP.Views
         public AboutPage()
         {
             InitializeComponent();
+        }
+        private void call_btn_Clicked(object sender, EventArgs e)
+        {
+            var call = CrossMessaging.Current.PhoneDialer;
+            if (call.CanMakePhoneCall)
+            {
+                call.MakePhoneCall(tel_nr_email.Text);
+            }
         }
     }
 }
