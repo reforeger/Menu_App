@@ -18,12 +18,13 @@ namespace Menu_APP.Views
         {
             InitializeComponent();
         }
-        private void call_btn_Clicked(object sender, EventArgs e)
+        
+        private void SendSMS_Clicked(object sender, EventArgs e)
         {
-            var call = CrossMessaging.Current.PhoneDialer;
-            if (call.CanMakePhoneCall)
+            var call = CrossMessaging.Current.SmsMessenger;
+            if (call.CanSendSms)
             {
-                call.MakePhoneCall(tel_nr_email.Text);
+                call.SendSms("+372 799236011");
             }
         }
     }

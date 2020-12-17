@@ -3,17 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu_APP.Views.threePage"
              BackgroundColor="AliceBlue">
-    <StackLayout Margin="20">
+    <StackLayout>
         <Label Text="Обзор"
-               FontSize="40"
-               TextColor="Orange"
+               FontSize="30"
+               TextColor="#ff6912"
                FontAttributes="Bold"
-               HorizontalOptions="Center" />
+               HorizontalOptions="StartAndExpand"
+               Padding="20"/>
         <ScrollView VerticalOptions="FillAndExpand">
-            <StackLayout>
-                <Label Text="EE8349823749823894                           1893.32 EUR" TextColor="Orange" FontSize="Medium"/>
-                <Label Text="Операции" TextColor="Orange"></Label>
+            <StackLayout Margin="12">
+                <Label Text="EE8349823749823894" TextColor="Gray" TextDecorations="Underline" FontSize="Medium"/>
+                <Label Text="Операции" TextColor="#ff6912"></Label>
+                
+                
             </StackLayout>
         </ScrollView>
     </StackLayout>
+    
 </ContentPage>

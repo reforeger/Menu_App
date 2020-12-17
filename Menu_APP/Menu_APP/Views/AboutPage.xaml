@@ -4,7 +4,9 @@
              x:Class="Menu_APP.Views.AboutPage"
              BackgroundColor="AliceBlue">
     <ContentPage.Content>
-        <Entry x:Name="tel_nr_email" Placeholder="Ender your telefon number" PlaceholderColor="Black" TextColor="Black" VerticalOptions="Center" HorizontalOptions="CenterAndExpand"></Entry>
-
+        <StackLayout>
+            <Button Text="Send THIS" BackgroundColor="SaddleBrown" Clicked="SendSMS_Clicked"  HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Button>
+        </StackLayout>
     </ContentPage.Content>
+
 </ContentPage>
