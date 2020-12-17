@@ -4,12 +4,14 @@
              x:Class="Menu_APP.Views.threePage"
              BackgroundColor="AliceBlue">
     <StackLayout>
+        <Image Source="bell.png"  WidthRequest="50" HeightRequest="50" HorizontalOptions="End"/>
         <Label Text="Обзор"
                FontSize="30"
                TextColor="#ff6912"
                FontAttributes="Bold"
                HorizontalOptions="StartAndExpand"
-               Padding="20"/>
+               Padding="20"
+               />
         <ScrollView VerticalOptions="FillAndExpand">
             <StackLayout Margin="12">
                 <Label Text="EE8349823749823894" TextColor="Gray" TextDecorations="Underline" FontSize="Medium"/>
