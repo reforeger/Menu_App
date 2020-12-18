@@ -16,5 +16,19 @@ namespace Menu_APP.Views
         {
             InitializeComponent();
         }
+
+
+
+        public async void EX_Clicked(object sender, EventArgs e)
+        {
+            
+            var action = await DisplayAlert("Exit?", "Are you sure to close", "Yes", "No");
+            if (action)
+            {
+                
+            }
+            
+        }
+
     }
 }

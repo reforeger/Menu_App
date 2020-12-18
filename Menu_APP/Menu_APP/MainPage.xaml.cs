@@ -106,8 +106,7 @@ namespace Menu_APP
 
             list.Add(new MasterMenuitems()
             {
-                Text = "Контакты",
-                Detail = "Бизнез-клиент",
+                Text = "Выход",
                 ImagePath = "kont1.png",
                 TargetPage = typeof(Views.eightPage)
             });

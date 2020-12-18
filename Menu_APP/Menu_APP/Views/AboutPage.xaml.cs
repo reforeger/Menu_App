@@ -18,7 +18,17 @@ namespace Menu_APP.Views
         {
             InitializeComponent();
         }
-        
+        private void Signup_Clicked(object sender, EventArgs e)
+        {
+            popup.IsVisible = true;
+        }
+        private void Log_Clicked(object sender, EventArgs e)
+        {
+            popup.IsVisible = false;
+        }
+    
+
+        /*
         private void SendSMS_Clicked(object sender, EventArgs e)
         {
             var call = CrossMessaging.Current.SmsMessenger;
@@ -26,6 +36,6 @@ namespace Menu_APP.Views
             {
                 call.SendSms("+372 799236011");
             }
-        }
+        }*/
     }
 }
