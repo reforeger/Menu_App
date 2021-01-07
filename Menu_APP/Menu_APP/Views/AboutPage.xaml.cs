@@ -26,7 +26,7 @@ namespace Menu_APP.Views
         {
             popup.IsVisible = false;
         }
-    
+
 
         /*
         private void SendSMS_Clicked(object sender, EventArgs e)
