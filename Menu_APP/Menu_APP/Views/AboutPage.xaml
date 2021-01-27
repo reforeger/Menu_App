@@ -19,7 +19,7 @@
                HorizontalOptions="Center" VerticalOptions="CenterAndExpand"
                Padding="20"
                />
-            <Button Text="Войти по Smart-ID" TextColor="White" BackgroundColor="Orange" Margin="120" Clicked="Signup_Clicked" HorizontalOptions="Center" ></Button>
+            <Button Text="Войти по Smart-ID" TextColor="White" BackgroundColor="Orange" Margin="120" Clicked="OnActionSheetSimple_Clicked" HorizontalOptions="Center" ></Button>
             <Label Text="Сменить метод входа"
                FontSize="16"
                TextColor="#2f8c9e"

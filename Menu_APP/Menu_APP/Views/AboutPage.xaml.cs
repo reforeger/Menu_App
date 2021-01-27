@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using System.Diagnostics;
 
 namespace Menu_APP.Views
 {
@@ -18,13 +18,15 @@ namespace Menu_APP.Views
         {
             InitializeComponent();
         }
-        private void Signup_Clicked(object sender, EventArgs e)
+
+        public async void OnActionSheetSimple_Clicked(object sender, EventArgs e)
         {
-            popup.IsVisible = true;
-        }
-        private void Log_Clicked(object sender, EventArgs e)
-        {
-            popup.IsVisible = false;
+            string result = await DisplayPromptAsync("Enter your smart ID", "password", maxLength: 4, keyboard: Keyboard.Numeric);
+            if (result == "7041")
+            {
+                
+                //await DisplayAlert("Alert", "You have been alerted", "OK");
+            }
         }
 
 

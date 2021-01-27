@@ -12,6 +12,7 @@ namespace Menu_APP
 {
     public partial class MainPage : MasterDetailPage
     {
+        
        
         public MainPage()
         {
@@ -23,7 +24,7 @@ namespace Menu_APP
             Detail = new NavigationPage((Page)Activator.CreateInstance(homePage));
             IsPresented = false;
             aboutList.ItemsSource = GetMenuList();
-
+            
 
 
         }
@@ -34,11 +35,12 @@ namespace Menu_APP
             var list = new List<MasterMenuitems>();
             list.Add(new MasterMenuitems()
             {
-
+                
                 Text = "Главное меню",
                 Detail = "вход в меню",
-                
                 ImagePath = "swed.png",
+
+                
                 TargetPage = typeof(Views.AboutPage)
 
 
@@ -119,6 +121,7 @@ namespace Menu_APP
 
         private void aboutList_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
+            
             var selectedMenuItem = (MasterMenuitems)e.SelectedItem;
             Type selectedPage = selectedMenuItem.TargetPage;
             Detail = new NavigationPage((Page)Activator.CreateInstance(selectedPage));

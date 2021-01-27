@@ -15,6 +15,7 @@ namespace Menu_APP.Views
         public eightPage()
         {
             InitializeComponent();
+
         }
 
 
