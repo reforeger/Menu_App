@@ -61,7 +61,7 @@ namespace Menu_APP
             list.Add(new MasterMenuitems()
             {
                 Text = "Дополнительная информация",
-                Detail = "информация о приложении",
+                Detail = "Часто задаваемые вопросы",
                 ImagePath = "qu.png",
                 TargetPage = typeof(Views.twoPage)
             });
@@ -70,7 +70,6 @@ namespace Menu_APP
             list.Add(new MasterMenuitems()
             {
                 Text = "Обзор",
-                
                 ImagePath = "hos.png",
                 TargetPage = typeof(Views.threePage)
             });
