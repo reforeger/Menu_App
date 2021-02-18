@@ -14,17 +14,20 @@ namespace Menu_APP.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AboutPage : ContentPage
     {
-        public string result = "0";
+        public string result;
         public AboutPage()
         {
             InitializeComponent();
         }
 
-        //public async void OnActionSheetSimple1_Clicked(object sender, EventArgs e)
-        //{
-            //string result1 = await DisplayPromptAsync("Enter your smart ID", "password", initialValue: "result", maxLength: 4, keyboard: Keyboard.Numeric);
+        public async void OnActionSheetSimple1_Clicked(object sender, EventArgs e)
+        {
+            if (result == "7041")
+            {
+                await DisplayAlert("Alert", "Access gained", "OK");
+            }
             
-        //}
+        }
 
         public async void OnActionSheetSimple_Clicked(object sender, EventArgs e)
         {

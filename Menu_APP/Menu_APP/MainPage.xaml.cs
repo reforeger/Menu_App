@@ -12,7 +12,7 @@ namespace Menu_APP
 {
     public partial class MainPage : MasterDetailPage
     {
-        public string result = "7041";
+        public string result;
        
         public MainPage()
         {
@@ -46,6 +46,7 @@ namespace Menu_APP
 
 
             });
+
 
             while(result == "7041")
 
