@@ -4,15 +4,16 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-
+using static Menu_APP.Views.AboutPage.Mypass;
 
 namespace Menu_APP
 {
     public partial class MainPage : MasterDetailPage
     {
-        public string result;
+        
        
         public MainPage()
         {
@@ -48,54 +49,47 @@ namespace Menu_APP
             });
 
 
-            while(result == "7041")
+           // if (result == "7041")
+            //{
+                list.Add(new MasterMenuitems()
+                {
 
-            {
-
-
-                
-                
-                    list.Add(new MasterMenuitems()
-                    {
-
-                        Text = "О Банковской системе",
-                        Detail = "дополнительная безопастность",
-                        ImagePath = "lok.png",
-                        TargetPage = typeof(Views.onePage)
-                    });
-                
-                //onePage
+                    Text = "О Банковской системе",
+                    Detail = "дополнительная безопастность",
+                    ImagePath = "lok.png",
+                    TargetPage = typeof(Views.onePage)
+                });
 
 
-                    list.Add(new MasterMenuitems()
-                    {
-                        Text = "Дополнительная информация",
-                        Detail = "Часто задаваемые вопросы",
-                        ImagePath = "qu.png",
-                        TargetPage = typeof(Views.twoPage)
-                    });
-                
+                list.Add(new MasterMenuitems()
+                {
+                    Text = "Дополнительная информация",
+                    Detail = "Часто задаваемые вопросы",
+                    ImagePath = "qu.png",
+                    TargetPage = typeof(Views.twoPage)
+                });
 
 
 
-                    list.Add(new MasterMenuitems()
-                    {
-                        Text = "Обзор",
-                        ImagePath = "hos.png",
-                        TargetPage = typeof(Views.threePage)
-                    });
-                
+
+                list.Add(new MasterMenuitems()
+                {
+                    Text = "Обзор",
+                    ImagePath = "hos.png",
+                    TargetPage = typeof(Views.threePage)
+                });
 
 
 
-                    list.Add(new MasterMenuitems()
-                    {
-                        Text = "Платежи",
 
-                        ImagePath = "mon.png",
-                        TargetPage = typeof(Views.fourPage)
-                    });
-                
+                list.Add(new MasterMenuitems()
+                {
+                    Text = "Платежи",
+
+                    ImagePath = "mon.png",
+                    TargetPage = typeof(Views.fourPage)
+                });
+
 
                 list.Add(new MasterMenuitems()
                 {
@@ -126,11 +120,12 @@ namespace Menu_APP
                     ImagePath = "kont1.png",
                     TargetPage = typeof(Views.eightPage)
                 });
-                break;   
-            }
+
+          //  }
             
-            
-            
+
+
+
             return list;
         }
 

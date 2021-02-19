@@ -2,15 +2,19 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu_APP.Views.Page1"
-             >
+             BackgroundColor="AliceBlue">
     <ContentPage.Content>
         <StackLayout>
-            <ActivityIndicator IsRunning="True"
-                   VerticalOptions="CenterAndExpand" />
-            <Label Text="Please Enter your Smart-ID code"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Daniel Mihol"
+                  
+                   VerticalOptions="StartAndExpand"
+                TextColor="#ff6912" 
+                   FontSize="Large" 
+                   Padding="20"
+                   />
+            <Label Text="Номер пользователя 5034903" TextColor="Gray" FontSize="Small" Padding="25" VerticalOptions="Start"></Label>
         </StackLayout>
     </ContentPage.Content>
-    
+
+
 </ContentPage>

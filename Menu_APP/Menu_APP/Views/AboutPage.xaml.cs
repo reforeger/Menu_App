@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using static Menu_APP.Views.AboutPage.Mypass;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using System.Diagnostics;
@@ -14,19 +14,15 @@ namespace Menu_APP.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AboutPage : ContentPage
     {
-        public string result;
+        
         public AboutPage()
         {
             InitializeComponent();
         }
 
-        public async void OnActionSheetSimple1_Clicked(object sender, EventArgs e)
+        public static class Mypass
         {
-            if (result == "7041")
-            {
-                await DisplayAlert("Alert", "Access gained", "OK");
-            }
-            
+            public static string result="0";
         }
 
         public async void OnActionSheetSimple_Clicked(object sender, EventArgs e)
