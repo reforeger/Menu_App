@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu_APP.Views.threePage"
              BackgroundColor="AliceBlue">
-
     <StackLayout Orientation="Horizontal">
+        
         <Label Text="Обзор"
                FontSize="30"
                TextColor="#ff6912"
@@ -13,7 +13,9 @@
                Padding="20"/>
         <ImageButton x:Name="bel" Source="bell.png"  WidthRequest="50" HeightRequest="50" VerticalOptions="Start" Clicked="OnActionSheetSimple_Clicked3" BackgroundColor="AliceBlue"/>
         <ImageButton x:Name="acc" Source="accc.png"  WidthRequest="50" HeightRequest="50" VerticalOptions="Start" Clicked="OnActionSheetSimple_Clicked2" BackgroundColor="AliceBlue"/>
+
     </StackLayout>
+
 
 
 </ContentPage>
