@@ -3,17 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Menu_APP.Views.fivePage"
              BackgroundColor="AliceBlue">
-    <StackLayout Margin="20">
-        <Label Text="THE BLACK CAT by Edgar Allan Poe"
-               FontSize="Medium"
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+
+            <Label Text="Дебетовая карточка Pluss"
+               FontSize="18"
+               TextColor="#ff6912"
                FontAttributes="Bold"
-               HorizontalOptions="Center" 
-               TextColor="Black"/>
-        <ScrollView VerticalOptions="FillAndExpand">
-            <StackLayout>
-                <Label Text="FOR the most wild, yet most homely narrative which I am about to pen, I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence. Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul. My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified -- have tortured -- have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror -- to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place -- some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects. FOR the most wild, yet most homely narrative which I am about to pen, I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence. Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul. My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified -- have tortured -- have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror -- to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place -- some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects. FOR the most wild, yet most homely narrative which I am about to pen, I neither expect nor solicit belief. Mad indeed would I be to expect it, in a case where my very senses reject their own evidence. Yet, mad am I not -- and very surely do I not dream. But to-morrow I die, and to-day I would unburthen my soul. My immediate purpose is to place before the world, plainly, succinctly, and without comment, a series of mere household events. In their consequences, these events have terrified -- have tortured -- have destroyed me. Yet I will not attempt to expound them. To me, they have presented little but Horror -- to many they will seem less terrible than barroques. Hereafter, perhaps, some intellect may be found which will reduce my phantasm to the common-place -- some intellect more calm, more logical, and far less excitable than my own, which will perceive, in the circumstances I detail with awe, nothing more than an ordinary succession of very natural causes and effects." TextColor="Black"/>
-                <!-- More Label objects go here -->
-            </StackLayout>
-        </ScrollView>
+               HorizontalOptions="StartAndExpand"
+               Padding="20"/>
+            <ImageButton x:Name="bel" Source="bell.png"  WidthRequest="50" HeightRequest="50" VerticalOptions="Start" Clicked="OnActionSheetSimple_Clicked3" BackgroundColor="AliceBlue"/>
+            <ImageButton x:Name="acc" Source="accc.png"  WidthRequest="50" HeightRequest="50" VerticalOptions="Start" Clicked="OnActionSheetSimple_Clicked2" BackgroundColor="AliceBlue" Padding="40"/>
+
+        </StackLayout>
+        <ImageButton x:Name="kartas" Source="karta.png"  WidthRequest="300" HeightRequest="150" VerticalOptions="Center" BackgroundColor="AliceBlue"/>
     </StackLayout>
 </ContentPage>

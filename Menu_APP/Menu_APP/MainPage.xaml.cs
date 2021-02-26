@@ -49,8 +49,9 @@ namespace Menu_APP
             });
 
 
-           // if (result == "7041")
-            //{
+            
+            if (result != "7041")
+            {
                 list.Add(new MasterMenuitems()
                 {
 
@@ -121,7 +122,7 @@ namespace Menu_APP
                     TargetPage = typeof(Views.eightPage)
                 });
 
-          //  }
+            }
             
 
 

@@ -6,13 +6,18 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Daniel Mihol"
-                  
-                   VerticalOptions="StartAndExpand"
+                   VerticalOptions="Start"
+                   HorizontalOptions="Center"
                 TextColor="#ff6912" 
                    FontSize="Large" 
                    Padding="20"
                    />
-            <Label Text="Номер пользователя 5034903" TextColor="Gray" FontSize="Small" Padding="25" VerticalOptions="Start"></Label>
+            <Label Text="Номер пользователя: 5034903" TextColor="Gray" FontSize="Small" HorizontalOptions="Center" VerticalOptions="Start"></Label>
+            <Label Text="Настройки" TextColor="#ff6912" HorizontalOptions="Start" Padding="15"></Label>
+            <Button Text="Предпочтения пользователя" BackgroundColor="AliceBlue" FontFamily="Times New Roman" TextColor="Black" Clicked="Button_Clicked1" BorderWidth="1" BorderColor="Gray"></Button>
+            <Button Text="Выйти" BackgroundColor="AliceBlue" FontFamily="Times New Roman" TextColor="Black" Clicked="Button_Clicked2" BorderWidth="1" BorderColor="Gray"></Button>
+            <Label Text="Информация" TextColor="#ff6912" Padding="20"></Label>
+            <Button Text="Обработка персональных данных" BackgroundColor="AliceBlue" FontFamily="Arial" TextColor="Black" Clicked="Button_Clicked3" BorderWidth="1" BorderColor="Gray"></Button>
         </StackLayout>
     </ContentPage.Content>
 
