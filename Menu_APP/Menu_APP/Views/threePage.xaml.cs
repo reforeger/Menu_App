@@ -26,7 +26,7 @@ namespace Menu_APP.Views
 
         public async void OnActionSheetSimple_Clicked2(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Page1());
+            await Navigation.PushAsync(new FriendPage());
         }
     }
 }
