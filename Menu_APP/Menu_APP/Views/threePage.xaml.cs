@@ -1,4 +1,5 @@
 ﻿using System;
+using Menu_APP.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,14 @@ namespace Menu_APP.Views
         {
             InitializeComponent();
         }
+        public class Friend
+        {
+
+            public string Name { get; set; }
+            public string Email { get; set; }
+            public string Phone { get; set; }
+
+        }
 
         public async void OnActionSheetSimple_Clicked3(object sender, EventArgs e)
         {
@@ -26,7 +35,12 @@ namespace Menu_APP.Views
 
         public async void OnActionSheetSimple_Clicked2(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new FriendPage());
+            await Navigation.PushAsync(new Page1());
+        }
+
+        public async void OnActionSheetSimple_Clicked123(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new FriendsListPage());
         }
     }
 }

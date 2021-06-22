@@ -6,13 +6,16 @@
     <StackLayout Orientation="Horizontal">
         
         <Label Text="Обзор"
-               FontSize="30"
+               FontSize="25"
                TextColor="#ff6912"
                FontAttributes="Bold"
                HorizontalOptions="StartAndExpand"
                Padding="20"/>
+        <Button Text="Enter System" Font="12" BackgroundColor="SeaGreen" VerticalOptions="End" HorizontalOptions="CenterAndExpand" WidthRequest="160" Clicked="OnActionSheetSimple_Clicked123" ></Button>
         <ImageButton x:Name="bel" Source="bell.png"  WidthRequest="50" HeightRequest="50" VerticalOptions="Start" Clicked="OnActionSheetSimple_Clicked3" BackgroundColor="AliceBlue"/>
         <ImageButton x:Name="acc" Source="accc.png"  WidthRequest="50" HeightRequest="50" VerticalOptions="Start" Clicked="OnActionSheetSimple_Clicked2" BackgroundColor="AliceBlue"/>
+
+
 
     </StackLayout>
 

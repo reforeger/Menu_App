@@ -28,10 +28,10 @@
     <EmbeddedResource Update="Views\fourPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\FriendListPage.xaml">
+    <EmbeddedResource Update="Views\FriendPage2.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\FriendPage.xaml">
+    <EmbeddedResource Update="Views\FriendsListPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\nastroyki.xaml">

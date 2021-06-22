@@ -42,7 +42,7 @@ namespace Menu_APP.ViewModels
                     FriendViewModel tempFriend = value;
                     selectedFriend = null;
                     OnPropertyChanged("SelectedFriend");
-                    Navigation.PushAsync(new FriendPage(tempFriend));
+                    Navigation.PushAsync(new FriendPage2(tempFriend));
                 }
             }
         }
@@ -54,7 +54,7 @@ namespace Menu_APP.ViewModels
 
         private void CreateFriend()
         {
-            Navigation.PushAsync(new FriendPage(new FriendViewModel() { ListViewModel = this }));
+            Navigation.PushAsync(new FriendPage2(new FriendViewModel() { ListViewModel = this }));
         }
         private void Back()
         {

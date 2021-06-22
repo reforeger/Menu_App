@@ -11,12 +11,14 @@ using Xamarin.Forms.Xaml;
 namespace Menu_APP.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class FriendListPage : ContentView
+    public partial class FriendPage2 : ContentPage
     {
-        public FriendListPage()
+        public FriendViewModel ViewModel { get; private set; }
+        public FriendPage2(FriendViewModel vm)
         {
             InitializeComponent();
-            BindingContext = new FriedsListViewModel() { Navigation = Navigation };
+            ViewModel = vm;
+            BindingContext = ViewModel;
         }
     }
 }

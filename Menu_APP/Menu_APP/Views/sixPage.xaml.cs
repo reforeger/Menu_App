@@ -19,8 +19,7 @@ namespace Menu_APP.Views
 
         public async void OnActionSheetSimple_Clicked123(object sender, EventArgs e)
         {
-            Uri halflife = new Uri("https://testometrika.com/personality-and-temper/the-formula-of-temperament-a-belov/");
-            Browser.OpenAsync(halflife);
+            await Navigation.PushAsync(new FriendsListPage());
         }
     }
 }

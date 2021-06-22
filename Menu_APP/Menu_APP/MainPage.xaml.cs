@@ -80,9 +80,6 @@ namespace Menu_APP
                     TargetPage = typeof(Views.threePage)
                 });
 
-
-
-
                 list.Add(new MasterMenuitems()
                 {
                     Text = "Платежи",
